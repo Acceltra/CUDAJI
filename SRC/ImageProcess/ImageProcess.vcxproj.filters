@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\CUDAIPHeader">
+      <UniqueIdentifier>{e9b6b95a-1320-4b88-b06f-54766214a96d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\CPUIPHeader">
+      <UniqueIdentifier>{1bfd8b1f-eb3f-41ec-b75a-845d6a15e896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CUDAIPCpp">
+      <UniqueIdentifier>{e42a81ff-12c3-498b-a386-d140f96d15ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CPUIPCpp">
+      <UniqueIdentifier>{de22b79b-935e-4871-9fde-5babbcaf8455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUGrayscaleProcessor.cpp">
+      <Filter>源文件\CPUIPCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseImageProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseImageProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUGrayScaleProcessor.h">
+      <Filter>头文件\CPUIPHeader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CUDAGrayScaleProcessor.cuh">
+      <Filter>头文件\CUDAIPHeader</Filter>
+    </None>
+    <None Include="CUDAGrayScaleProcessor.cu">
+      <Filter>源文件\CUDAIPCpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>
